@@ -1,3 +1,28 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
+.header{
+    // overflow: hidden;
+    &__container{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+    }
+    img {
+        width: 100px;
+        height: auto;
+    }
+    &__navbar{
+        .navbar{
+            display: none;
+        }
+        // display: block;
+        // flex-direction: column;
+        // justify-content: space-between;
+        // justify-items: start;
+        // align-items: center;
+        // gap: 10px;
+    }
+}
