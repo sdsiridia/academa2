@@ -54,6 +54,7 @@
 
 #check-menu:checked + .menu-hamburguesa .lineas span:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
+    background-color: #ff5722; 
 }
 
 #check-menu:checked + .menu-hamburguesa .lineas span:nth-child(2) {
@@ -62,6 +63,7 @@
 
 #check-menu:checked + .menu-hamburguesa .lineas span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
+    background-color: #ff5722; 
 }
 
 .navbar {
