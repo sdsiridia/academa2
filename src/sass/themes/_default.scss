@@ -23,7 +23,7 @@ body {
 /* Estilos globales para el contenedor principal de Grid */
 .page-home {
     --header-height: #{v.$altura_header};
-    --header-transition: 1s ease-in-out;
+    --header-transition: #{v.$header-transition};
     display: grid;
     gap: 20px;
     grid-template:
