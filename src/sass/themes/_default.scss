@@ -22,23 +22,25 @@ body {
 
 /* Estilos globales para el contenedor principal de Grid */
 .page-home {
+    --header-height: #{v.$altura_header};
+    --header-transition: 1s ease-in-out;
     display: grid;
     gap: 20px;
     grid-template:
-        "header" 200px
-        "navbar" 50px
-        "main" 100px
-        "sidebar"
-        "footer";
+        "header" var(--header-height)
+        "main" auto
+        // "sidebar"
+        "footer" 50px;
+    transition: grid-template-rows var(--header-transition);
 
     .header {
         grid-area: header;
-        background-color: rgba(103, 93, 241, 0.74);
+        // background-color: rgba(103, 93, 241, 0.74);
     }
 
     .navbar {
         grid-area: navbar;
-        background-color: rgba(179, 46, 241, 0.74);
+        // background-color: rgba(179, 46, 241, 0.74);
     }
 
     .sidebar {
@@ -55,5 +57,10 @@ body {
         grid-area: footer;
         background-color: rgba(237, 123, 67, 0.74);
     }
+}
+
+.page-home:has(#check-menu:checked) {
+    --header-height: 400px;
+    --header-transition: .6s ease-in-out;
 }
 
