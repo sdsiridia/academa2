@@ -2,6 +2,7 @@
 @use '../abstracts/mixins' as m;
 
 .header {
+    background-color: v.$white;
     &__container {
         position: relative;
         padding: 16px;
